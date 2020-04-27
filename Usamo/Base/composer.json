@@ -1,0 +1,22 @@
+{
+    "name": "usamo/module-base",
+    "description": "order-grid-columns",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "usamocom@ukr.net",
+            "name": "Yurii Dmytrunets"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Usamo\\Base\\": ""
+        }
+    }
+}
