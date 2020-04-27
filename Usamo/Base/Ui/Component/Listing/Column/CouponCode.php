@@ -23,7 +23,6 @@ class CouponCode extends Column
      * @param ContextInterface $context
      * @param UiComponentFactory $uiComponentFactory
      * @param OrderRepositoryInterface $orderRepository
-     * @param SearchCriteriaBuilder $criteria
      * @param array $components
      * @param array $data
      */
@@ -34,8 +33,8 @@ class CouponCode extends Column
         array $components = [],
         array $data = []
     ) {
-        $this->orderRepository = $orderRepository;
         parent::__construct($context, $uiComponentFactory, $components, $data);
+        $this->orderRepository = $orderRepository;
     }
 
     /**

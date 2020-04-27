@@ -41,8 +41,8 @@ class DiscountAmount extends Column
         array $components = [],
         array $data = []
     ) {
-        $this->orderRepository = $orderRepository;
         parent::__construct($context, $uiComponentFactory, $components, $data);
+        $this->orderRepository = $orderRepository;
         $this->priceFormatter = $priceFormatter;
     }
 
